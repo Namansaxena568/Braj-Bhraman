@@ -1,0 +1,102 @@
+[
+  {
+    "id": "p1",
+    "name": "Parikrama Marg Vrindavan",
+    "distance_km": 10.5,
+    "highlights": [
+      "Yamuna ghats",
+      "Ancient temples"
+    ],
+    "coords": [
+      [27.581, 77.700],
+      [27.582, 77.705],
+      [27.585, 77.710],
+      [27.590, 77.715],
+      [27.594, 77.720]
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Govardhan Parikrama",
+    "distance_km": 21.0,
+    "highlights": [
+      "Govardhan Hill",
+      "Sacred spots"
+    ],
+    "coords": [
+      [27.580, 77.470],
+      [27.585, 77.480],
+      [27.590, 77.490],
+      [27.600, 77.500],
+      [27.610, 77.510]
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "Barsana Parikrama",
+    "distance_km": 8.0,
+    "highlights": [
+      "Radha Rani Temple",
+      "Kusum Sarovar",
+      "Lathmar Holi streets"
+    ],
+    "coords": [
+      [27.650, 77.380],
+      [27.652, 77.385],
+      [27.655, 77.390],
+      [27.658, 77.395],
+      [27.660, 77.400]
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "Nandgaon Parikrama",
+    "distance_km": 7.5,
+    "highlights": [
+      "Nand Bhawan",
+      "Panoramic views of Braj",
+      "Krishna childhood memories"
+    ],
+    "coords": [
+      [27.730, 77.420],
+      [27.732, 77.425],
+      [27.734, 77.430],
+      [27.736, 77.435],
+      [27.738, 77.440]
+    ]
+  },
+  {
+    "id": "p5",
+    "name": "Radha Kund – Shyam Kund Parikrama",
+    "distance_km": 3.0,
+    "highlights": [
+      "Radha Kund",
+      "Shyam Kund",
+      "Sacred water rituals"
+    ],
+    "coords": [
+      [27.530, 77.490],
+      [27.532, 77.495],
+      [27.534, 77.500],
+      [27.536, 77.505],
+      [27.538, 77.510]
+    ]
+  },
+  {
+    "id": "p6",
+    "name": "Mathura City Parikrama",
+    "distance_km": 12.0,
+    "highlights": [
+      "Dwarkadhish Temple",
+      "Vishram Ghat",
+      "Krishna Janmabhoomi"
+    ],
+    "coords": [
+      [27.500, 77.670],
+      [27.505, 77.675],
+      [27.510, 77.680],
+      [27.515, 77.685],
+      [27.520, 77.690]
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "pr1",
+    "name": "Mathura Peda",
+    "price": 299,
+    "image": "../image/hq720.jpg",
+    "description": "Authentic Mathura Peda - 500g pack."
+  },
+  {
+    "id": "pr2",
+    "name": "Vrindavan Incense Sticks",
+    "price": 149,
+    "image": "../image/vrindavanflower.webp",
+    "description": "Floral incense, 50 sticks."
+  },
+  {
+    "id": "pr3",
+    "name": "Tulsi Mala",
+    "price": 199,
+    "image": "../image/tulsi-mala-3-mm.jpg",
+    "description": "Handcrafted Tulsi beads mala."
+  },
+  {
+    "id": "pr4",
+    "name": "Krishna Flute Keychain",
+    "price": 99,
+    "image": "../image/61LQpXY0K7L._UY1100_.jpg",
+    "description": "Miniature flute keychain inspired by Lord Krishna."
+  },
+  {
+    "id": "pr5",
+    "name": "Braj Handicraft Pottery",
+    "price": 499,
+    "image": "../image/blue-pottery-828.jpg",
+    "description": "Traditional Braj-style clay pottery for home decor."
+  },
+  {
+    "id": "pr6",
+    "name": "Radha-Krishna Wall Painting",
+    "price": 799,
+    "image": "../image/91CDiA-g1lL_700x700.webp",
+    "description": "Beautiful canvas painting of Radha-Krishna."
+  },
+  {
+    "id": "pr7",
+    "name": "Sandalwood Hand Soap",
+    "price": 129,
+    "image": "../image/2_f86b8305-abdd-496f-9773-335e29846f28.webp",
+    "description": "Natural sandalwood soap, fragrant and soothing."
+  },
+  {
+    "id": "pr8",
+    "name": "Brij Festival Mug",
+    "price": 249,
+    "image": "../image/customize-mugs-for-diwali-gift-500x500.webp",
+    "description": "Ceramic mug with Braj festival motifs."
+  },
+  {
+    "id": "pr9",
+    "name": "Brij Wooden Box",
+    "price": 349,
+    "image": "../image/wooden-pen-box-664.jpg",
+    "description": "Handcrafted wooden jewelry or keepsake box."
+  },
+  {
+    "id": "pr10",
+    "name": "Braj Brass Diya Set",
+    "price": 599,
+    "image": "../image/81SWZ2QPiHL._UF894,1000_QL80_.jpg",
+    "description": "Traditional brass diyas for pooja or decoration."
+  },
+  {
+    "id": "pr11",
+    "name": "Floral Wall Hanging",
+    "price": 399,
+    "image": "../image/wallhanging_5.webp",
+    "description": "Handcrafted floral wall hanging from Braj region."
+  },
+  {
+    "id": "pr12",
+    "name": "Radha-Krishna Idol (Small)",
+    "price": 699,
+    "image": "../image/a_73.webp",
+    "description": "Small idol for home altar."
+  },
+  {
+    "id": "pr13",
+    "name": "Braj Traditional Saree",
+    "price": 1499,
+    "image": "../image/JANKI_Block_Printed_Cotton_Saree.webp",
+    "description": "Handloom saree inspired by Braj culture."
+  },
+  {
+    "id": "pr14",
+    "name": "Mithai Box (Mixed)",
+    "price": 599,
+    "image": "../image/sdsw.jpg",
+    "description": "Assorted sweets box - Mathura special."
+  },
+  {
+    "id": "pr15",
+    "name": "Brij Jewelry Set",
+    "price": 1299,
+    "image": "../image/1-2-necklace-set-brijbazaar-original-imagvz9m8beaj4rf.webp",
+    "description": "Necklace & earrings set inspired by Braj designs."
+  },
+  {
+    "id": "pr16",
+    "name": "Hand-painted Clay Pot",
+    "price": 449,
+    "image": "../image/handpainted-clay-potplanterclay-pot-1-1_1714833957.jpg",
+    "description": "Decorative clay pot with hand-painted motifs."
+  },
+  {
+    "id": "pr17",
+    "name": "Braj Music CD",
+    "price": 299,
+    "image": "../image/Colours-of-Braj-Backpack-Studio-Folk-Music-of-India-by-Anahad-Foundation-English-2021-20210615220628-500x500.jpg",
+    "description": "Traditional devotional songs from Braj region."
+  },
+  {
+    "id": "pr18",
+    "name": "Mini Pichwai Painting",
+    "price": 799,
+    "image": "../image/Pichwai-Painting-5_06617266-d015-4447-9079-a90861c47d62.webp",
+    "description": "Miniature Pichwai painting depicting Krishna leela."
+  },
+  {
+    "id": "pr19",
+    "name": "Brij Sandalwood Beads",
+    "price": 249,
+    "image": "../image/51OQjlahauL._UF894,1000_QL80_.jpg",
+    "description": "Natural sandalwood beads for malas."
+  },
+  {
+    "id": "pr20",
+    "name": "Brij Eco Tote Bag",
+    "price": 199,
+    "image": "../image/2fa00172-939c-429f-b502-39f3c69a4b95.webp",
+    "description": "Reusable tote bag with Braj motifs."
+  },
+  {
+    "id": "pr21",
+    "name": "Handmade Candle Set",
+    "price": 349,
+    "image": "../image/scentedcandlegiftset_b7eabcf2-4bbf-47f4-a4a7-75d2b91afe0a_2048x.webp",
+    "description": "Scented candles handcrafted in Braj style."
+  },
+  {
+    "id": "pr22",
+    "name": "Krishna Theme Notebook",
+    "price": 149,
+    "image": "../image/71XusDcrLGL._UF1000,1000_QL80_.jpg",
+    "description": "Notebook with Krishna artwork on cover."
+  },
+  {
+    "id": "pr23",
+    "name": "Brij Handcrafted Coasters",
+    "price": 199,
+    "image": "../image/714SZ-NqQHL.jpg",
+    "description": "Set of 4 wooden coasters with Braj motifs."
+  },
+  {
+    "id": "pr24",
+    "name": "Radha-Krishna Cushion Cover",
+    "price": 349,
+    "image": "../image/krishna-and-radha-printed-velvet-cushion-cover.jpg",
+    "description": "Soft cushion cover with Radha-Krishna print."
+  },
+  {
+    "id": "pr25",
+    "name": "Braj Sweets Combo Pack",
+    "price": 899,
+    "image": "../image/21b84fafb0fcd3e84c797d404d7ff7b2.avif",
+    "description": "Combo pack of Mathura peda, rasgulla, and other sweets."
+  },
+  {
+    "id": "pr26",
+    "name": "Brass Krishna Flute Idol",
+    "price": 749,
+    "image": "../image/61z9tDZJ4FL._UF894,1000_QL80_.jpg",
+    "description": "Brass miniature flute idol for decor."
+  },
+  {
+    "id": "pr27",
+    "name": "Brij Leather Key Holder",
+    "price": 199,
+    "image": "../image/81PpRaZ-5PL._UF1000,1000_QL80_.jpg",
+    "description": "Handmade leather key holder with Braj design."
+  },
+  {
+    "id": "pr28",
+    "name": "Brij Cotton Scarf",
+    "price": 349,
+    "image": "../image/Untitled-design-5-4-400x400.webp",
+    "description": "Lightweight cotton scarf with traditional Braj prints."
+  },
+  {
+    "id": "pr29",
+    "name": "Brij Wooden Pen Stand",
+    "price": 299,
+    "image": "../image/41YTi+xlw6L._UF1000,1000_QL80_.jpg",
+    "description": "Wooden pen stand handcrafted in Braj style."
+  },
+  {
+    "id": "pr30",
+    "name": "Brij Decorative Plate",
+    "price": 499,
+    "image": "../image/A1WGs6SCxwL.jpg",
+    "description": "Decorative plate with Radha-Krishna artwork."
+  }
+]

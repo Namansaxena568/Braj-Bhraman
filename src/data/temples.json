@@ -1,0 +1,317 @@
+[
+  {
+    "id": "t1",
+    "name": "Banke Bihari Temple",
+    "location": "Vrindavan",
+    "image": "../image/banke-bihari-temple.jpg",
+    "about": "Famous temple dedicated to Banke Bihari (combined form of Radha-Krishna)."  
+  },
+  {
+    "id": "t2",
+    "name": "Prem Mandir",
+    "location": "Vrindavan",
+    "image": "../image/Prem_Mandir_(The_Temple_of_Divine_Love).jpg",
+    "about": "Massive marble temple dedicated to divine love of Radha and Krishna."
+  },
+  {
+    "id": "t3",
+    "name": "ISKCON Temple",
+    "location": "Vrindavan",
+    "image": "../image/ISKCON_Pune_Main_Temple.jpg",
+    "about": "Sri Sri Krishna-Balarama Mandir of the ISKCON movement."
+  },
+  {
+    "id": "t4",
+    "name": "Radha Raman Temple",
+    "location": "Vrindavan",
+    "image": "../image/Radha_Raman_Temple,_Vrindavan.jpg",
+    "about": "Historic temple housing the deity Radha-Ramana, established around 1542 CE."  
+  },
+  {
+    "id": "t5",
+    "name": "Radha Damodar Temple",
+    "location": "Vrindavan",
+    "image": "../image/Radha-Damodar-Temple.jpg",
+    "about": "One of the seven principal Goswami temples, founded 1542 CE by Jiva Goswami."  
+  },
+  {
+    "id": "t6",
+    "name": "Radha Vallabh Temple",
+    "location": "Vrindavan",
+    "image": "../image/Radha-Vallabh-Temple.jpg",
+    "about": "Historic Radha-Vallabh temple, first erected in 1585 A.D."  
+  },
+  {
+    "id": "t7",
+    "name": "Radha Madan Mohan Temple",
+    "location": "Vrindavan",
+    "image": "../image/sri-radha-madan-mohan-temple-vrindavan.jpg",
+    "about": "One of the oldest temples, built in Mughal-influenced Nagara style."  
+  },
+  {
+    "id": "t8",
+    "name": "Sri Ranganatha (Rangaji) Temple",
+    "location": "Vrindavan",
+    "image": "../image/Rangnathji_Temple.jpg",
+    "about": "South-Indian style temple dedicated to Lord Ranganatha (Vishnu)."  
+  },
+  {
+    "id": "t9",
+    "name": "Gokulananda Temple",
+    "location": "Vrindavan",
+    "image": "../image/Gokulananda-temple.jpg",
+    "about": "Houses deities of Radha-Vinoda, Radha-Gokulananda, and others."  
+  },
+  {
+    "id": "t10",
+    "name": "Pagal Baba Temple",
+    "location": "Vrindavan",
+    "image": "../image/pagal-baba-temple.jpg",
+    "about": "Seven-story white temple dedicated to Lord Krishna."
+  },
+  {
+    "id": "t11",
+    "name": "Seva Kunj",
+    "location": "Vrindavan",
+    "image": "../image/seva-kunj.jpg",
+    "about": "Legendary grove believed to be where Radha-Krishna performed Ras-Leela."  
+  },
+  {
+    "id": "t12",
+    "name": "Nidhivan",
+    "location": "Vrindavan",
+    "image": "../image/Nidhivan.jpg",
+    "about": "Mystical forest where Krishna is believed to perform nightly Ras-Leela."  
+  },
+  {
+    "id": "t13",
+    "name": "Priyakant Ji Temple",
+    "location": "Vrindavan",
+    "image": "../image/Priyakant-ji-Temple.jpg",
+    "about": "Temple with a lotus-shaped structure surrounded by water."
+  },
+  {
+    "id": "t14",
+    "name": "Bhuteshwar Mahadev Mandir",
+    "location": "Mathura",
+    "image": "../image/bhuteshwar-mahadev-temple.jpg",
+    "about": "Shiva temple, one of the Shakti Peeths in Mathura."
+  },
+  {
+    "id": "t15",
+    "name": "Gopeshwar Mahadev Temple",
+    "location": "Vrindavan",
+    "image": "../image/Gopeshwar-Mahadev-Ji.jpg",
+    "about": "Dedicated to Lord Shiva, established by Krishna’s descendant Vrajanabha."
+  },
+  {
+    "id": "t16",
+    "name": "Dauji Mandir",
+    "location": "Mathura",
+    "image": "../image/Dauji-Mandir.jpg",
+    "about": "Dedicated to Balarama (Krishna’s elder brother), over 5000 years old."
+  },
+  {
+    "id": "t17",
+    "name": "Dwarkadhish Temple",
+    "location": "Mathura",
+    "image": "../image/Dwarkadish-temple-2.jpg",
+    "about": "Historic temple dedicated to Lord Krishna in Mathura."
+  },
+  {
+    "id": "t18",
+    "name": "Shri Krishna Janmabhoomi Temple",
+    "location": "Mathura",
+    "image": "../image/Shri-Krishna-Janmabhoomi-Temple.jpg",
+    "about": "Believed to be Lord Krishna’s birthplace."
+  },
+  {
+    "id": "t19",
+    "name": "Radha Rani Temple (Barsana)",
+    "location": "Barsana",
+    "image": "../image/Radha-Rani-Temple.jpg",
+    "about": "Historical temple of Radha, located on Bhanugarh Hill."  
+  },
+  {
+    "id": "t22",
+    "name": "Sri Rambag Mandir",
+    "location": "Vrindavan",
+    "image": "../image/shri-rambag-mandir.jpg",
+    "about": "First Ram temple in Vrindavan, built in the Ramanandi Sampradaya."
+  },
+  {
+    "id": "t23",
+    "name": "Vrindavan Chandrodaya Mandir",
+    "location": "Vrindavan",
+    "image": "../image/Vrindavan-Chandrodaya-Mandir.jpg",
+    "about": "A modern geodesic temple complex being built, will be tallest temple upon completion."
+  },
+  {
+    "id": "t24",
+    "name": "Keshi Ghat Temple",
+    "location": "Vrindavan",
+    "image": "../image/Keshi_Ghat.jpg",
+    "about": "Riverside temple at Yamuna’s ghat tied with Krishna’s slaying of demon Keshi."
+  },
+  {
+    "id": "t27",
+    "name": "Katyayani Peeth",
+    "location": "Vrindavan",
+    "image": "../image/katyayani-shakti-peeth.jpg",
+    "about": "Shakti Peeth dedicated to Goddess Katyayani in Vrindavan."
+  },
+  {
+    "id": "t28",
+    "name": "Sri Ranganatha (Rangaji) Temple",
+    "location": "Vrindavan",
+    "image": "../image/Rangnathji_Temple.jpg",
+    "about": "South-Indian style temple dedicated to Lord Ranganatha (Vishnu)."
+  },
+  {
+    "id": "t29",
+    "name": "Radha Govind Ji Temple",
+    "location": "Vrindavan",
+    "image": "../image/Govind-Dev-Ji-Mandir-Vrindavan.webp",
+    "about": "One of the Seven Goswami temples, dedicated to Radha-Govind."
+  },
+  {
+    "id": "t30",
+    "name": "Radha Shyamsundar Temple",
+    "location": "Vrindavan",
+    "image": "../image/Shri-Radha-Shyamsundar-Ji.jpg",
+    "about": "Another of the Seven ancient Goswami temples."
+  },
+  {
+    "id": "t31",
+    "name": "Radha Gokulananda Temple",
+    "location": "Vrindavan",
+    "image": "../image/DSC_0071-1-rotated.jpg",
+    "about": "Sacred temple housing the deity Sri Radha–Gokulananda."
+  },
+  {
+    "id": "t33",
+    "name": "Gurudwara Braj Bhoomi Sahib",
+    "location": "Vrindavan",
+    "image": "../image/gurudwara-brahm-bunga-sahib-doraha-ludhiana-gurudwaras-g302yyxhrq.avif",
+    "about": "Sikh pilgrimage site marking memory of Guru Nanak’s visit to Vrindavan."
+  },
+  {
+    "id": "t34",
+    "name": "Jagannath Temple",
+    "location": "Vrindavan",
+    "image": "../image/Puri-Jagannath-Temple-.jpg",
+    "about": "Temple dedicated to Lord Jagannath in the Braj region."
+  },
+  {
+    "id": "t35",
+    "name": "Nidhivan Temple",
+    "location": "Vrindavan",
+    "image": "../image/nidhivan-temple-2.webp",
+    "about": "Adjacent to Nidhivan forest, dedicated to Banke Bihari."
+  },
+  {
+    "id": "t36",
+    "name": "Chaurasi Khamba Temple",
+    "location": "Vrindavan",
+    "image": "../image/Chaurasi-khamba.jpg",
+    "about": "Historic site with 84 carved pillars (Khamba)."
+  },
+  {
+    "id": "t37",
+    "name": "Kusum Sarovar Temple",
+    "location": "Govardhan",
+    "image": "../image/DSC_0109.jpg",
+    "about": "Sacred pond with memorials and temples in Govardhan region."
+  },
+  {
+    "id": "t38",
+    "name": "Giriraj Temple",
+    "location": "Govardhan",
+    "image": "../image/daan-ghati-temple.jpg",
+    "about": "Dedicated to Govardhan Hill (Giriraj), revered by devotees."
+  },
+  {
+    "id": "t39",
+    "name": "Nandgaon Temple (Nand Bhavan)",
+    "location": "Nandgaon",
+    "image": "../image/DSC_0156-1.jpg",
+    "about": "Birthplace of Nand Baba, Krishna’s foster father."
+  },
+  {
+    "id": "t40",
+    "name": "Barsana Temple Complex",
+    "location": "Barsana",
+    "image": "../image/Barsana-Temple-Cover-Photo-840x425.jpg",
+    "about": "Group of temples, including Radha Rani Temple, in Barsana."  
+  },
+  {
+    "id": "t41",
+    "name": "Gokul Temple (Dauji Mandir)",
+    "location": "Gokul",
+    "image": "../image/Dauji-mharaj.jpg",
+    "about": "Temple in Gokul dedicated to Balarama, known as Gokul’s stalwart."
+  },
+  {
+    "id": "t42",
+    "name": "Vrindavan Ghats (Keshi Ghat)",
+    "location": "Vrindavan",
+    "image": "../image/Vrandavan_Keshi_Ghat.webp",
+    "about": "Scenic Yamuna ghat associated with Krishna’s legend of demon Keshi."
+  },
+  {
+    "id": "t43",
+    "name": "Goverdhan Parikrama Path Temple",
+    "location": "Govardhan",
+    "image": "../image/govardhan-hill.jpg",
+    "about": "Shrine en route Govardhan Parikrama path."
+  },
+  {
+    "id": "t44",
+    "name": "Devanand Temple",
+    "location": "Vrindavan",
+    "image": "../image/sri-devananda-gaudiya.avif",
+    "about": "Temple dedicated to Devananda Swami in Vrindavan."
+  },
+  {
+    "id": "t45",
+    "name": "Ashta Sakhi Temple",
+    "location": "Vrindavan",
+    "image": "../image/ashta-sakhii-pic1.jpg",
+    "about": "Temple dedicated to the eight beloved companions of Radha-Krishna."
+  },
+  {
+    "id": "t46",
+    "name": "Yogmaya Temple",
+    "location": "Mathura",
+    "image": "../image/yogmaya.jpg",
+    "about": "One of oldest temples in Mathura, built during Indo-Greco period."
+  },
+  {
+    "id": "t47",
+    "name": "Kaliya Ghat Temple",
+    "location": "Mathura",
+    "image": "../image/kaliya-ghat.jpeg",
+    "about": "Temple on Yamuna ghat associated with Krishna’s Kaliya demon story."
+  },
+  {
+    "id": "t48",
+    "name": "Brindavan Niketan",
+    "location": "Vrindavan",
+    "image": "../image/Brindavan Niketan.jpg",
+    "about": "Prayer center and spiritual guesthouse in Vrindavan."
+  },
+  {
+    "id": "t49",
+    "name": "Chintamani Temple",
+    "location": "Vrindavan",
+    "image": "../image/Chintamani-Temple-Theur.jpg",
+    "about": "Temple devoted to Lord Gopal Chintamani."
+  },
+  {
+    "id": "t50",
+    "name": "Sita Ram Temple",
+    "location": "Mathura",
+    "image": "../image/Sita-Ram.jpeg",
+    "about": "Dedicated to Lord Rama and Sita in Mathura city."  
+  }
+]

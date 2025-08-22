@@ -1,0 +1,98 @@
+[
+  {
+    "id": "h1",
+    "name": "Braj Heritage Inn",
+    "location": "Vrindavan",
+    "image": "../image/dadaqbcltpov.webp",
+    "price": 1899,
+    "amenities": ["AC", "WiFi", "Breakfast"]
+  },
+  {
+    "id": "h2",
+    "name": "Yamuna View Hotel",
+    "location": "Mathura",
+    "image": "../image/Hotel_yamuna_view.jpeg",
+    "price": 2299,
+    "amenities": ["AC", "WiFi", "Parking"]
+  },
+  {
+    "id": "h3",
+    "name": "Govardhan Retreat",
+    "location": "Govardhan",
+    "image": "../image/GRC.jpeg",
+    "price": 1599,
+    "amenities": ["AC", "Breakfast"]
+  },
+  {
+    "id": "h4",
+    "name": "Radisson Hotel Vrindavan",
+    "location": "Vrindavan",
+    "image": "../image/16256-163842-f81274113_3XL.jpg",
+    "price": 7000,
+    "amenities": ["AC", "WiFi", "Parking", "Restaurant"]
+  },
+  {
+    "id": "h5",
+    "name": "Triptam Vrindavan",
+    "location": "Vrindavan",
+    "image": "../image/001_dtk1ru.webp",
+    "price": 5000,
+    "amenities": ["AC", "WiFi", "Breakfast"]
+  },
+  {
+    "id": "h6",
+    "name": "Treebo Brij Kaushal",
+    "location": "Mathura",
+    "image": "../image/625100845.jpg",
+    "price": 2500,
+    "amenities": ["AC", "WiFi", "Laundry"]
+  },
+  {
+    "id": "h7",
+    "name": "Brij Eternity by Leisure Hotels",
+    "location": "Vrindavan",
+    "image": "../image/202404051844471619-96305b90-af27-4617-91d9-5668d7b04539.avif",
+    "price": 6000,
+    "amenities": ["AC", "WiFi", "Breakfast", "Banquet"]
+  },
+  {
+    "id": "h8",
+    "name": "Shree Radha Residency",
+    "location": "Vrindavan",
+    "image": "../image/4a14c183.webp",
+    "price": 3000,
+    "amenities": ["AC", "WiFi"]
+  },
+  {
+    "id": "h9",
+    "name": "Best Western Vrindavan",
+    "location": "Vrindavan",
+    "image": "../image/3479ac22407d11ec8ac90a58a9feac02.avif",
+    "price": 8000,
+    "amenities": ["AC", "WiFi", "Gym"]
+  },
+  {
+    "id": "h10",
+    "name": "Super Townhouse Govardhan",
+    "location": "Govardhan",
+    "image": "../image/74bc08bc021111f09c900a58a9feac02.avif",
+    "price": 2000,
+    "amenities": ["AC", "WiFi"]
+  },
+  {
+    "id": "h11",
+    "name": "Madhav Muskan Residency",
+    "location": "Mathura",
+    "image": "../image/1-Main-Day-scaled-1.webp",
+    "price": 3500,
+    "amenities": ["AC", "WiFi", "Parking", "Breakfast"]
+  },
+  {
+    "id": "h12",
+    "name": "Krishna Valley Resort",
+    "location": "Vrindavan",
+    "image": "../image/201908141119015023-b5bd82e28f8711eba03e0242ac110003.avif",
+    "price": 6500,
+    "amenities": ["AC", "WiFi", "Pool", "Spa"]
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cab1",
+    "name": "Local Cab",
+    "price": "₹500 / day",
+    "image": "/images/transport/cab.jpg",
+    "description": "Comfortable AC cab service for local sightseeing."
+  },
+  {
+    "id": "auto1",
+    "name": "Auto Rickshaw",
+    "price": "₹200 / ride",
+    "image": "/images/transport/auto.jpg",
+    "description": "Affordable and quick rides within the city."
+  },
+  {
+    "id": "bus1",
+    "name": "Tourist Bus",
+    "price": "₹1000 / seat",
+    "image": "/images/transport/bus.jpg",
+    "description": "Luxury bus service for group travel."
+  },
+  {
+    "id": "bike1",
+    "name": "Bike on Rent",
+    "price": "₹400 / day",
+    "image": "/images/transport/bike.jpg",
+    "description": "Two-wheelers available for solo travel."
+  },
+  {
+    "id": "erick1",
+    "name": "E-Rickshaw",
+    "price": "₹150 / ride",
+    "image": "/images/transport/erickshaw.jpg",
+    "description": "Eco-friendly rides for short distance travel."
+  }
+]
