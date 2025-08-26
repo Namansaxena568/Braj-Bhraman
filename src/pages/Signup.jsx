@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Home from "../pages/Home"; // apne Home component ka path sahi karna
+import Home from "../pages/Home"; // apne Home component ka path check kar le
 
 export default function Signup() {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
@@ -17,14 +17,14 @@ export default function Signup() {
 
   return (
     <div className="relative">
-      {/* Background - Home page */}
+      {/* Background - Home Page */}
       <div className="fixed inset-0 -z-10">
         <Home />
       </div>
 
       {/* Overlay */}
-      <div className="flex items-center justify-center min-h-screen bg-black/40 backdrop-blur-sm">
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-2xl shadow-xl w-full max-w-md border border-white/40 relative">
+      <div className="flex items-center justify-center min-h-screen bg-black/50 backdrop-blur-sm px-4">
+        <div className="bg-white/30 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-2xl w-full max-w-sm sm:max-w-md border border-white/40 relative">
           {/* Close button */}
           <a
             href="/"
@@ -33,9 +33,12 @@ export default function Signup() {
             ✕
           </a>
 
-          <h2 className="text-2xl font-bold text-center mb-6 text-orange-800">
-            Signup
+          {/* Heading */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-orange-800 drop-shadow-md">
+            Create Account
           </h2>
+
+          {/* Signup Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
@@ -43,16 +46,16 @@ export default function Signup() {
               placeholder="Full Name"
               value={form.name}
               onChange={handleChange}
-              className="w-full p-3 border rounded-lg bg-white/60 backdrop-blur-sm focus:outline-none"
+              className="w-full p-3 rounded-lg bg-white/70 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none placeholder-gray-600 text-gray-800"
               required
             />
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Email Address"
               value={form.email}
               onChange={handleChange}
-              className="w-full p-3 border rounded-lg bg-white/60 backdrop-blur-sm focus:outline-none"
+              className="w-full p-3 rounded-lg bg-white/70 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none placeholder-gray-600 text-gray-800"
               required
             />
             <input
@@ -61,19 +64,25 @@ export default function Signup() {
               placeholder="Password"
               value={form.password}
               onChange={handleChange}
-              className="w-full p-3 border rounded-lg bg-white/60 backdrop-blur-sm focus:outline-none"
+              className="w-full p-3 rounded-lg bg-white/70 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none placeholder-gray-600 text-gray-800"
               required
             />
+
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+              className="w-full bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white py-3 rounded-lg font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300"
             >
-              Signup
+              Sign Up
             </button>
           </form>
-          <p className="mt-4 text-sm text-center text-white">
+
+          {/* Login redirect */}
+          <p className="mt-5 text-sm text-center text-gray-100">
             Already have an account?{" "}
-            <a href="/login" className="text-orange-800 hover:underline">
+            <a
+              href="/login"
+              className="text-yellow-300 hover:text-yellow-400 font-medium hover:underline"
+            >
               Login
             </a>
           </p>

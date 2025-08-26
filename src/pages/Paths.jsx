@@ -20,7 +20,7 @@ export default function Paths() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
+      <section className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] w-full overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1800&auto=format&fit=crop"
           alt="Parikrama"
@@ -31,12 +31,12 @@ export default function Paths() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center text-white px-6"
+            className="text-center text-white px-4 sm:px-6"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 drop-shadow-lg">
               🚩 Paths & Parikrama
             </h1>
-            <p className="text-lg md:text-xl drop-shadow">
+            <p className="text-base sm:text-lg md:text-xl drop-shadow max-w-2xl mx-auto">
               Discover sacred routes and experience the divine journey of Braj Parikrama.
             </p>
           </motion.div>
@@ -44,18 +44,18 @@ export default function Paths() {
       </section>
 
       {/* Paths Cards Section */}
-      <section className="container py-12">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+      <section className="container py-10 sm:py-12 px-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-gray-800">
           Paths & Parikrama Routes
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {paths.map((p) => (
             <Card
               key={p.id}
-              className="flex flex-col rounded-2xl overflow-hidden shadow-lg bg-white/70 backdrop-blur-md hover:scale-105 transition-transform duration-300"
+              className="flex flex-col rounded-2xl overflow-hidden shadow-lg bg-white/80 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300"
             >
               {/* Mini Map */}
-              <div className="h-48 w-full overflow-hidden rounded-t-2xl shadow-inner">
+              <div className="h-40 sm:h-48 w-full overflow-hidden rounded-t-2xl shadow-inner">
                 <MapContainer
                   center={p.coords[0]}
                   zoom={13}
@@ -81,7 +81,7 @@ export default function Paths() {
 
               {/* Card Content */}
               <div className="p-5 flex-1 flex flex-col justify-between">
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">
                   {p.name}
                 </h3>
                 <p className="text-sm text-gray-600 mb-3">
@@ -105,7 +105,7 @@ export default function Paths() {
 
         {/* Fullscreen Map Modal */}
         {selectedPath && (
-          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-3 sm:p-4">
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-5xl relative">
               {/* Close Button */}
               <button
@@ -118,7 +118,7 @@ export default function Paths() {
               <MapContainer
                 center={selectedPath.coords[0]}
                 zoom={14}
-                style={{ height: "80vh", width: "100%" }}
+                style={{ height: "75vh", width: "100%" }}
                 scrollWheelZoom={true}
                 dragging={true}
               >

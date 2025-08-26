@@ -37,20 +37,21 @@ export default function BrajGallery() {
     autoplaySpeed: 3000,
     pauseOnHover: false,
     fade: true,
+    arrows: false, // 👈 mobile ke liye arrows hata diye
   };
 
   return (
-    <section className="container mx-auto py-10">
-      {/* <h2 className="text-3xl font-bold text-center mb-8">📸 Braj Gallery</h2> */}
+    <section className="container mx-auto py-6 sm:py-10 px-3 sm:px-6 lg:px-8">
+      {/* <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">📸 Braj Gallery</h2> */}
       <Slider {...settings} className="rounded-2xl shadow-lg overflow-hidden">
         {galleryImages.map((img, i) => (
           <div key={i} className="relative">
             <img
               src={img.url}
               alt={img.title}
-              className="w-full h-[500px] object-cover"
+              className="w-full h-60 sm:h-80 md:h-[500px] object-cover"
             />
-            <div className="absolute bottom-0 bg-black/50 text-white w-full text-center py-3 text-lg">
+            <div className="absolute bottom-0 bg-black/50 text-white w-full text-center py-2 sm:py-3 text-sm sm:text-base md:text-lg">
               {img.title}
             </div>
           </div>

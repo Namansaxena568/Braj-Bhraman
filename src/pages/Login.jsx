@@ -23,19 +23,22 @@ export default function Login() {
       </div>
 
       {/* Overlay */}
-      <div className="flex items-center justify-center min-h-screen bg-black/40 backdrop-blur-sm">
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-2xl shadow-xl w-full max-w-md border border-white/40 relative">
+      <div className="flex items-center justify-center min-h-screen bg-black/50 backdrop-blur-sm px-4">
+        <div className="bg-white/30 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl w-full max-w-md border border-white/40 relative">
           {/* Close button */}
           <a
             href="/"
-            className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-xl"
+            className="absolute top-3 right-3 text-gray-700 hover:text-gray-900 text-xl"
           >
             ✕
           </a>
 
-          <h2 className="text-2xl font-bold text-center mb-6 text-orange-800">
+          {/* Title */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-orange-900 drop-shadow">
             Login
           </h2>
+
+          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="email"
@@ -43,7 +46,7 @@ export default function Login() {
               placeholder="Email"
               value={form.email}
               onChange={handleChange}
-              className="w-full p-3 border rounded-lg bg-white/60 backdrop-blur-sm focus:outline-none text-gray-800 placeholder-gray-500"
+              className="w-full p-3 rounded-lg border border-white/50 bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800 placeholder-gray-500"
               required
             />
             <input
@@ -52,19 +55,24 @@ export default function Login() {
               placeholder="Password"
               value={form.password}
               onChange={handleChange}
-              className="w-full p-3 border rounded-lg bg-white/60 backdrop-blur-sm focus:outline-none text-gray-800 placeholder-gray-500"
+              className="w-full p-3 rounded-lg border border-white/50 bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800 placeholder-gray-500"
               required
             />
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+              className="w-full py-2.5 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition"
             >
               Login
             </button>
           </form>
-          <p className="mt-4 text-sm text-center text-white">
+
+          {/* Footer */}
+          <p className="mt-5 text-sm text-center text-white drop-shadow">
             Don’t have an account?{" "}
-            <a href="/signup" className="text-orange-800 hover:underline font-medium">
+            <a
+              href="/signup"
+              className="text-orange-900 font-medium hover:underline"
+            >
               Signup
             </a>
           </p>

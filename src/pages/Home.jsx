@@ -13,8 +13,8 @@ function AnimatedStat({ value, label, color }) {
 
   useEffect(() => {
     if (isInView) {
-      let target = parseInt(value.replace(/\D/g, "")); // numeric value
-      const duration = 4000; // 4 seconds
+      let target = parseInt(value.replace(/\D/g, "")); 
+      const duration = 4000;
       const fps = 60;
       const totalSteps = Math.ceil((duration / 1000) * fps);
       const increment = Math.ceil(target / totalSteps);
@@ -41,12 +41,12 @@ function AnimatedStat({ value, label, color }) {
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: false }}
-      className="card hover:scale-105 transition-transform text-center p-6 bg-white/50 rounded-2xl shadow-md"
+      className="hover:scale-105 transition-transform text-center p-4 sm:p-6 bg-white/50 rounded-2xl shadow-md"
     >
-      <p className={`text-3xl font-extrabold ${color}`}>
+      <p className={`text-2xl sm:text-3xl font-extrabold ${color}`}>
         {value.includes("%") ? `${count}%` : count}
       </p>
-      <p className="text-gray-600 mt-2">{label}</p>
+      <p className="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">{label}</p>
     </motion.div>
   );
 }
@@ -61,7 +61,7 @@ function AboutStats() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-6">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
       {stats.map((stat, i) => (
         <AnimatedStat
           key={i}
@@ -79,7 +79,6 @@ export default function Home() {
     <div className="relative min-h-screen overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_#fff7e6,_#ffecd1,_#ffe6e6)] -z-10"></div>
-      {/* Subtle Texture */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] opacity-20 -z-10"></div>
 
       {/* Hero Section */}
@@ -88,26 +87,26 @@ export default function Home() {
         <img
           src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1800&auto=format&fit=crop"
           alt="Braj"
-          className="w-full h-[65vh] md:h-[75vh] object-cover"
+          className="w-full h-[50vh] sm:h-[65vh] md:h-[75vh] object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center z-20 px-4">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-2xl bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-xl"
+            className="max-w-xl sm:max-w-2xl bg-white/80 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-xl text-center sm:text-left"
           >
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-orange-800 drop-shadow">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-orange-800 drop-shadow">
               Welcome to Braj Bhraman
             </h1>
-            <p className="mt-4 text-gray-700 leading-relaxed">
+            <p className="mt-3 sm:mt-4 text-gray-700 text-sm sm:text-base leading-relaxed">
               Discover sacred temples, stay in serene hotels, explore scenic paths, and shop authentic Braj products.
             </p>
-            <div className="mt-6 flex flex-wrap gap-4">
-              <Link to="/temples" className="btn-secondary">
+            <div className="mt-5 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <Link to="/temples" className="btn-secondary w-full sm:w-auto text-center">
                 Explore Temples
               </Link>
-              <Link to="/braj-ki-raj" className="btn-primary">
+              <Link to="/braj-ki-raj" className="btn-primary w-full sm:w-auto text-center">
                 Visit Store
               </Link>
             </div>
@@ -116,28 +115,22 @@ export default function Home() {
       </section>
 
       {/* Quick Links */}
-      <section className="container -mt-10 md:-mt-14 relative z-30">
-        <div className="grid md:grid-cols-4 gap-6">
+      <section className="container -mt-8 sm:-mt-10 md:-mt-14 relative z-30">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
           {[
-            { to: "/temples", icon: <FaOm className="text-orange-600 text-4xl mb-3" />, title: "Temples", desc: "Know important mandirs of Braj." },
-            { to: "/hotels", icon: <FaHotel className="text-blue-600 text-4xl mb-3" />, title: "Hotels", desc: "Stay options with basic details." },
-            { to: "/paths", icon: <FaTree className="text-green-600 text-4xl mb-3" />, title: "Paths & Parikrama", desc: "Popular routes and distances." },
-            { to: "/braj-ki-raj", icon: <FaStore className="text-purple-600 text-4xl mb-3" />, title: "Local Store", desc: "Authentic products from Braj." }
+            { to: "/temples", icon: <FaOm className="text-orange-600 text-3xl sm:text-4xl mb-2 sm:mb-3" />, title: "Temples", desc: "Know important mandirs of Braj." },
+            { to: "/hotels", icon: <FaHotel className="text-blue-600 text-3xl sm:text-4xl mb-2 sm:mb-3" />, title: "Hotels", desc: "Stay options with basic details." },
+            { to: "/paths", icon: <FaTree className="text-green-600 text-3xl sm:text-4xl mb-2 sm:mb-3" />, title: "Paths & Parikrama", desc: "Popular routes and distances." },
+            { to: "/braj-ki-raj", icon: <FaStore className="text-purple-600 text-3xl sm:text-4xl mb-2 sm:mb-3" />, title: "Local Store", desc: "Authentic products from Braj." }
           ].map((item, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-            >
+            <motion.div key={i} initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}>
               <Link
                 to={item.to}
-                className="block p-6 text-center rounded-xl backdrop-blur-md bg-white/60 shadow-lg border border-gray-200 hover:scale-105 hover:shadow-2xl transition-all group"
-                style={{ listStyle: "none" }}
+                className="block p-4 sm:p-6 text-center rounded-xl backdrop-blur-md bg-white/60 shadow-lg border border-gray-200 hover:scale-105 hover:shadow-2xl transition-all group"
               >
                 {item.icon}
-                <h3 className="text-lg font-bold group-hover:text-orange-600 transition-colors">{item.title}</h3>
-                <p className="text-gray-600 mt-1 text-sm">{item.desc}</p>
+                <h3 className="text-base sm:text-lg font-bold group-hover:text-orange-600 transition-colors">{item.title}</h3>
+                <p className="text-gray-600 mt-1 text-xs sm:text-sm">{item.desc}</p>
               </Link>
             </motion.div>
           ))}

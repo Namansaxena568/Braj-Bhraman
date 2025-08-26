@@ -11,7 +11,7 @@ export default function Checkout() {
 
   const pay = (e) => {
     e.preventDefault();
-    if(paymentMethod === 'cod') {
+    if (paymentMethod === 'cod') {
       alert(`Order placed with Cash on Delivery! Amount: ₹${cartTotal}`);
     } else {
       alert(`Redirecting to UPI/Online Payment Gateway for ₹${cartTotal}`);
@@ -20,19 +20,21 @@ export default function Checkout() {
   };
 
   return (
-    <section className="container py-16 max-w-3xl">
-      <h2 className="text-3xl font-bold mb-8 text-center">Checkout</h2>
+    <section className="container px-4 sm:px-6 lg:px-8 py-12 sm:py-16 max-w-3xl">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">
+        Checkout
+      </h2>
 
       <motion.form
         onSubmit={pay}
-        className="glass rounded-3xl p-8 space-y-6 bg-white/40 backdrop-blur-md shadow-xl"
+        className="glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 space-y-5 sm:space-y-6 bg-white/40 backdrop-blur-md shadow-xl"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         {/* User Details */}
         <input
-          className="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full border rounded-lg sm:rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm sm:text-base"
           name="name"
           placeholder="Full Name"
           value={form.name}
@@ -40,16 +42,16 @@ export default function Checkout() {
           required
         />
         <input
-          className="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full border rounded-lg sm:rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm sm:text-base"
           name="address"
           placeholder="Address"
           value={form.address}
           onChange={handle}
           required
         />
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <input
-            className="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="w-full border rounded-lg sm:rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm sm:text-base"
             name="city"
             placeholder="City"
             value={form.city}
@@ -57,7 +59,7 @@ export default function Checkout() {
             required
           />
           <input
-            className="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="w-full border rounded-lg sm:rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm sm:text-base"
             name="pincode"
             placeholder="Pincode"
             value={form.pincode}
@@ -66,7 +68,7 @@ export default function Checkout() {
           />
         </div>
         <input
-          className="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full border rounded-lg sm:rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm sm:text-base"
           name="phone"
           placeholder="Phone"
           value={form.phone}
@@ -76,14 +78,40 @@ export default function Checkout() {
 
         {/* Payment Method */}
         <div className="space-y-2">
-          <p className="font-semibold">Select Payment Method:</p>
-          <div className="flex gap-4">
-            <label className={`flex-1 p-3 border rounded-xl text-center cursor-pointer transition-colors ${paymentMethod==='cod' ? 'bg-orange-500 text-white' : 'bg-white text-gray-800 hover:bg-orange-100'}`}>
-              <input type="radio" name="payment" value="cod" checked={paymentMethod==='cod'} onChange={()=>setPaymentMethod('cod')} className="hidden"/>
+          <p className="font-semibold text-sm sm:text-base">Select Payment Method:</p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <label
+              className={`flex-1 p-3 border rounded-lg sm:rounded-xl text-center cursor-pointer transition-colors text-sm sm:text-base ${
+                paymentMethod === 'cod'
+                  ? 'bg-orange-500 text-white'
+                  : 'bg-white text-gray-800 hover:bg-orange-100'
+              }`}
+            >
+              <input
+                type="radio"
+                name="payment"
+                value="cod"
+                checked={paymentMethod === 'cod'}
+                onChange={() => setPaymentMethod('cod')}
+                className="hidden"
+              />
               Cash on Delivery
             </label>
-            <label className={`flex-1 p-3 border rounded-xl text-center cursor-pointer transition-colors ${paymentMethod==='upi' ? 'bg-orange-500 text-white' : 'bg-white text-gray-800 hover:bg-orange-100'}`}>
-              <input type="radio" name="payment" value="upi" checked={paymentMethod==='upi'} onChange={()=>setPaymentMethod('upi')} className="hidden"/>
+            <label
+              className={`flex-1 p-3 border rounded-lg sm:rounded-xl text-center cursor-pointer transition-colors text-sm sm:text-base ${
+                paymentMethod === 'upi'
+                  ? 'bg-orange-500 text-white'
+                  : 'bg-white text-gray-800 hover:bg-orange-100'
+              }`}
+            >
+              <input
+                type="radio"
+                name="payment"
+                value="upi"
+                checked={paymentMethod === 'upi'}
+                onChange={() => setPaymentMethod('upi')}
+                className="hidden"
+              />
               UPI / Online Payment
             </label>
           </div>
@@ -92,13 +120,14 @@ export default function Checkout() {
         {/* Place Order Button */}
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-orange-500 to-yellow-400 text-white font-bold py-3 rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-transform text-lg"
+          className="w-full bg-gradient-to-r from-orange-500 to-yellow-400 text-white font-bold py-3 rounded-xl sm:rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-transform text-sm sm:text-lg"
         >
-          {paymentMethod==='cod' ? 'Place Order' : 'Proceed to Pay'}
+          {paymentMethod === 'cod' ? 'Place Order' : 'Proceed to Pay'}
         </button>
 
-        <p className="text-center text-gray-600 mt-2">
-          Total Amount: <span className="font-extrabold text-orange-600">₹{cartTotal}</span>
+        <p className="text-center text-gray-600 mt-2 text-sm sm:text-base">
+          Total Amount:{' '}
+          <span className="font-extrabold text-orange-600">₹{cartTotal}</span>
         </p>
       </motion.form>
     </section>
