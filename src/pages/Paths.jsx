@@ -18,7 +18,12 @@ export default function Paths() {
   const [selectedPath, setSelectedPath] = useState(null);
 
   return (
-    <>
+    <div className="relative">
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_#fff7e6,_#ffecd1,_#ffe6e6)] -z-10"></div>
+      {/* Subtle Texture */}
+      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] opacity-20 -z-10"></div>
+
       {/* Hero Section */}
       <section className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] w-full overflow-hidden">
         <img
@@ -104,40 +109,72 @@ export default function Paths() {
         </div>
 
         {/* Fullscreen Map Modal */}
-        {selectedPath && (
-          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-3 sm:p-4">
-            <div className="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-5xl relative">
-              {/* Close Button */}
-              <button
-                onClick={() => setSelectedPath(null)}
-                className="absolute top-3 right-3 z-10 bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-600"
-              >
-                ✕
-              </button>
-              {/* Large Map */}
-              <MapContainer
-                center={selectedPath.coords[0]}
-                zoom={14}
-                style={{ height: "75vh", width: "100%" }}
-                scrollWheelZoom={true}
-                dragging={true}
-              >
-                <TileLayer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution="&copy; OpenStreetMap contributors"
-                />
-                <Polyline positions={selectedPath.coords} color="red" weight={4} />
-                <Marker position={selectedPath.coords[0]}>
-                  <Popup>Start</Popup>
-                </Marker>
-                <Marker position={selectedPath.coords[selectedPath.coords.length - 1]}>
-                  <Popup>End</Popup>
-                </Marker>
-              </MapContainer>
-            </div>
-          </div>
-        )}
+{selectedPath && (
+  <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-3 sm:p-4">
+    <div className="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-5xl relative">
+      {/* Close Button */}
+      <button
+        onClick={() => setSelectedPath(null)}
+        className="absolute top-3 right-3 z-10 bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-600"
+      >
+        ✕
+      </button>
+
+      {/* Large Map */}
+      <MapContainer
+        center={selectedPath.coords[0]}
+        zoom={14}
+        style={{ height: "60vh", width: "100%" }}   // height thoda kam kiya niche space ke liye
+        scrollWheelZoom={true}
+        dragging={true}
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution="&copy; OpenStreetMap contributors"
+        />
+        <Polyline positions={selectedPath.coords} color="red" weight={4} />
+        <Marker position={selectedPath.coords[0]}>
+          <Popup>Start</Popup>
+        </Marker>
+        <Marker position={selectedPath.coords[selectedPath.coords.length - 1]}>
+          <Popup>End</Popup>
+        </Marker>
+      </MapContainer>
+
+      {/* Details Section */}
+<div className="p-6 bg-gray-50">
+  <h2 className="text-2xl font-bold text-gray-800 mb-3">
+    {selectedPath.name}
+  </h2>
+
+  <p className="text-gray-700 mb-4">
+    <span className="font-semibold">Distance:</span> {selectedPath.distance_km} km
+  </p>
+
+  {/* History Section */}
+  {selectedPath.history && (
+    <div className="mb-4">
+      <h3 className="text-lg font-semibold text-gray-800 mb-2">History:</h3>
+      <p className="text-gray-600 leading-relaxed">
+        {selectedPath.history}
+      </p>
+    </div>
+  )}
+
+  {/* Highlights Section */}
+  <h3 className="text-lg font-semibold text-gray-800 mb-2">Highlights:</h3>
+  <ul className="list-disc list-inside text-gray-700 space-y-1">
+    {selectedPath.highlights.map((h, i) => (
+      <li key={i}>{h}</li>
+    ))}
+  </ul>
+</div>
+
+    </div>
+  </div>
+)}
+
       </section>
-    </>
+    </div>
   );
 }
