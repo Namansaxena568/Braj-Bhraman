@@ -70,7 +70,7 @@ export default function Login() {
           <p className="mt-5 text-sm text-center text-white drop-shadow">
             Don’t have an account?{" "}
             <a
-              href="/signup"
+              href="/Signup"
               className="text-orange-900 font-medium hover:underline"
             >
               Signup
